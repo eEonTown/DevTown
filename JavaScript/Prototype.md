@@ -10,11 +10,21 @@ ECMA6 표준에서 Class문법이 추가 되었다고는 하지만 Class문법�
 ## Prototype객체
 함수 객체를 생성하게 되면 그 객체에는 prototype이라는 객체가 생성이되고, 그 프로토타입 객체에는 constructor라는 속성이 존재해서 서로를 참조할 수 있게 됩니다.
 <br>
+![image](https://user-images.githubusercontent.com/102468071/209544453-e751d811-81ac-4087-8d08-44f695588c2e.png)
+
+[https://www.nextree.co.kr/p7323/](https://www.nextree.co.kr/p7323/)
+
+<br><br>
 
 함수를 생성하고 생성자 함수로 객체를 생성하게 되면 그 객체는 __proto__속성으로인해 상위 프로토타입 객체를 참조할 수 있습니다.
 <br><br>
 즉, 프로토타입 객체는 생성자 함수를 통해 생성된 모든 객체의 모태가 되며, 생성된 모든 객체는 프로토타입 객체를 참조합니다.
 <br>
+![image](https://user-images.githubusercontent.com/102468071/209544478-53faa6f1-9b7f-479e-80eb-3ad6b83509f4.png)
+
+[https://www.nextree.co.kr/p7323/](https://www.nextree.co.kr/p7323/)
+
+<br><br>
 
 위에서 언급한 __proto__는 부모 프로토타입 객체를 가리키는 링크를 담고 있다는 특징이 있습니다.
 그래서 __proto__의 특징을 이용해서 부모객체의 property나 method를 발견할 때까지 부모의 부모객체를 거슬러 올라가면서 검색하는 것을 Prototype체인이라고 합니다.
